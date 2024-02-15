@@ -112,7 +112,7 @@
     left: 0;
     bottom: -39px;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background: #fff;
     border-radius: 5px;
     transform-origin: none;
@@ -121,9 +121,9 @@
   }
 }
 .header__line {
+  position: absolute;
   width: 100%;
   border-bottom: 1px solid $HeaderLineColor;
-  position: absolute;
   top: 90;
 }
 
@@ -132,7 +132,7 @@
   min-width: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   background-color: transparent;
