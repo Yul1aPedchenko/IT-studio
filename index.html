@@ -21,9 +21,8 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <header class="header__page">
+    <header class="header">
       <div class="container">
-        <!-- <div class="header__menu-wrap">
           <button
             class="menu-toggle js-open-menu"
             aria-expanded="false"
@@ -33,7 +32,6 @@
               <use href="img/symbol-defs.svg#icon-menu"></use>
             </svg>
           </button>
-        </div> -->
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
@@ -64,7 +62,7 @@
       <div class="header__line"></div>
     </header>
     <main>
-      <section class="about__section">
+      <section class="about">
         <div class="container">
           <div class="about__text-wrap">
             <h2 class="about__title">
@@ -138,7 +136,7 @@
         </div>
       </section>
     </main>
-    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg class="mobile-menu__icon-close" width="40" height="40">
           <use href="img/symbol-defs.svg#icon-close"></use>
@@ -187,7 +185,13 @@
           </li>
         </ul>
       </div>
-    </div> -->
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/mobile-menu.js"></script>
   </body>
 </html>
