@@ -127,6 +127,12 @@
   top: 90;
 }
 
+.header__menu-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 15px;
+}
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;

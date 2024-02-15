@@ -207,6 +207,19 @@ body {
   top: 90;
 }
 
+.header__menu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 15px;
+}
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
