@@ -1,7 +1,7 @@
 .benefits {
   padding: 40px 0;
   &__text {
-    max-width: 489px;
+    width: 489px;
   }
   &__title {
     text-align: left;
@@ -31,12 +31,13 @@
     text-align: center;
     color: $AccentColor;
     padding-bottom: 50px;
+    cursor: pointer;
   }
   &__link::after {
     content: "";
     display: block;
     min-width: 290px;
-    max-width: 1200px;
+    max-width: 500%;
     height: 1px;
     background-color: $LineColor;
     margin-top: 50px;
@@ -47,13 +48,14 @@
     margin-top: 40px;
     padding-bottom: 40px;
     margin-left: 30px;
+    justify-content: space-around;
   }
-  &__item {
-    margin-top: 38px;
-    margin-right: 30px;
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
   }
   &__flex {
     display: flex;
+    align-items: center;
   }
   &__icon {
     width: 30px;
@@ -99,6 +101,10 @@
     &__image {
       order: 2;
     }
+    &__text{
+      width: 355px;
+      margin-right: 128px;
+    }
     &__link {
       padding-bottom: 96px;
     }
@@ -115,6 +121,11 @@
     padding-right: 0;
     &__image {
       width: 500px;
+    }
+    &__text{
+      margin-top: 90px;
+      margin-right: 191px;
+      margin-left: 70px;
     }
     &__link {
       padding-bottom: 143px;
