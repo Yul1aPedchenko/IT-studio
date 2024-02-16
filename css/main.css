@@ -337,10 +337,7 @@ body {
   }
 }
 .benefits {
-  padding: 40px;
-}
-.benefits__image {
-  width: 290px;
+  padding: 40px 0;
 }
 .benefits__text {
   max-width: 489px;
