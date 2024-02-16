@@ -372,12 +372,14 @@ body {
   color: #4985FF;
   padding-bottom: 50px;
 }
-.benefits__wraper::after {
+.benefits__link::after {
   content: "";
   display: block;
   min-width: 290px;
-  max-width: 1800px;
+  max-width: 1200px;
+  height: 1px;
   background-color: #E0E0E0;
+  margin-top: 50px;
 }
 .benefits__list {
   display: -webkit-box;

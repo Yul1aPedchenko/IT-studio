@@ -32,12 +32,14 @@ text-align: center;
 color: $AccentColor;
 padding-bottom: 50px;
     }
-    &__wraper::after{
+    &__link::after{
         content: '';
         display: block;
         min-width: 290px;
-        max-width: 1800px;
+        max-width: 1200px;
+        height: 1px;
         background-color: $LineColor;
+        margin-top: 50px;
     }
     &__list{
         display: flex;
