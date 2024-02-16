@@ -6,7 +6,7 @@
 <symbol id="icon-menu" viewBox="0 0 45 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M0 5.756v-5.131h45.176v5.131h-45.176zM0 18.583h45.176v-5.131h-45.176v5.131zM0 31.41h45.176v-5.131h-45.176v5.131z"></path>
 </symbol>
-<symbol id="icon-create_website" viewBox="0 0 32 32">
+<symbol id="icon-create-website" viewBox="0 0 32 32">
 <path fill="#e5e5e5" style="fill: var(--color1, #e5e5e5)" d="M0 0h32v32h-32z"></path>
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M-352-1035.2h1536v4514.4h-1536z"></path>
 <path fill="none" stroke="#e0e0e0" style="stroke: var(--color3, #e0e0e0)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8" d="M59.6 16c0 24.080-19.52 43.6-43.6 43.6s-43.6-19.52-43.6-43.6c0-24.080 19.52-43.6 43.6-43.6s43.6 19.52 43.6 43.6z"></path>
