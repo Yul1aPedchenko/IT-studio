@@ -1,20 +1,37 @@
 .about {
-  padding-top: 110px;
-  padding-bottom: 105px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   &__text-wrap {
-    max-width: 739px;
+    max-width: 290px;
     text-align: center;
     margin: 0 auto;
   }
   &__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 20px;
     line-height: 146%;
     color: $TitleColor;
+    margin-bottom: 15px;
   }
   &__text {
     color: $TextColor;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 158%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 110px;
+    padding-bottom: 105px;
+    &__text-wrap {
+      max-width: 739px;
+    }
+    &__title {
+      font-size: 36px;
+       margin-bottom: 32px;
+    }
+    &__text {
+      font-size: 16px;
+    }
   }
 }
