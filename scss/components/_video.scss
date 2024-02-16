@@ -8,6 +8,9 @@
     url(../img/header/background-desktop@1x.jpg) 1x,
     url(../img/header/background-desktop@2x.jpg) 2x
   );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .video__title {
   color: $PrimaryTextColor;
