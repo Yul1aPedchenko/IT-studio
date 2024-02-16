@@ -340,7 +340,7 @@ body {
   padding: 40px 0;
 }
 .benefits__text {
-  width: 489px;
+  max-width: 489px;
 }
 .benefits__title {
   text-align: left;
@@ -489,9 +489,9 @@ body {
   }
 }
 .video {
-  background-image: -webkit-image-set(url(/img/header/background-desktop@1x.webp) 1x, url(/img/header/background-desktop@2x.webp) 2x);
-  background-image: -webkit-image-set(url(/img/header/background-desktop@1x.jpg) 1x, url(/img/header/background-desktop@2x.jpg) 2x);
-  background-image: image-set(url(/img/header/background-desktop@1x.jpg) 1x, url(/img/header/background-desktop@2x.jpg) 2x);
+  background-image: -webkit-image-set(url(../img/header/background-desktop@1x.webp) 1x, url(../img/header/background-desktop@2x.webp) 2x);
+  background-image: -webkit-image-set(url(../img/header/background-desktop@1x.jpg) 1x, url(../img/header/background-desktop@2x.jpg) 2x);
+  background-image: image-set(url(../img/header/background-desktop@1x.jpg) 1x, url(../img/header/background-desktop@2x.jpg) 2x);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -558,10 +558,10 @@ video {
 }
 @media screen and (max-width: 1199px) {
   .video {
-    background-image: url(/img/header/background-tablet@1x.jpg);
-    background-image: -webkit-image-set(url(/img/header/background-tablet@1x.webp) 1x, url(/img/header/background-tablet@2x.webp) 2x);
-    background-image: -webkit-image-set(url(/img/header/background-tablet@1x.jpg) 1x, url(/img/header/background-tablet@2x.jpg) 2x);
-    background-image: image-set(url(/img/header/background-tablet@1x.jpg) 1x, url(/img/header/background-tablet@2x.jpg) 2x);
+    background-image: url(../img/header/background-tablet@1x.jpg);
+    background-image: -webkit-image-set(url(../img/header/background-tablet@1x.webp) 1x, url(../img/header/background-tablet@2x.webp) 2x);
+    background-image: -webkit-image-set(url(../img/header/background-tablet@1x.jpg) 1x, url(../img/header/background-tablet@2x.jpg) 2x);
+    background-image: image-set(url(../img/header/background-tablet@1x.jpg) 1x, url(../img/header/background-tablet@2x.jpg) 2x);
   }
 }
 .form {

@@ -1,7 +1,7 @@
 .benefits {
   padding: 40px 0;
   &__text {
-    width: 489px;
+    max-width: 489px;
   }
   &__title {
     text-align: left;
@@ -101,7 +101,7 @@
     &__image {
       order: 2;
     }
-    &__text{
+    &__text {
       width: 355px;
       margin-right: 128px;
     }
@@ -122,7 +122,7 @@
     &__image {
       width: 500px;
     }
-    &__text{
+    &__text {
       margin-top: 90px;
       margin-right: 191px;
       margin-left: 70px;
