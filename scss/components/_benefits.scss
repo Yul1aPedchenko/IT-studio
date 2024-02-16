@@ -1,0 +1,77 @@
+.benefits{
+    padding: 40px;
+    &__image{
+        width: 290px;
+    }
+    &__title{
+        text-align: left;
+        color: $SecondaryTextColor;
+        font-family: 'Monserrat', sans-serif;
+font-weight: 700;
+font-size: 20px;
+line-height: 146%;
+padding-top: 19px;
+padding-bottom: 15px;
+    }
+    &__describtion{
+        font-family: 'Monserrat', sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 158%;
+text-align: justify;
+color: $TextColor;
+padding-bottom: 20px;
+    }
+    &__link{
+        font-family:  'Monserrat', sans-serif;
+font-weight: 500;
+font-size: 14px;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+text-align: center;
+color: $AccentColor;
+padding-bottom: 50px;
+    }
+    &__text::after{
+        content: '';
+        display: block;
+        min-width: 290px;
+        max-width: 1800px;
+        background-color: $LineColor;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+&__item{
+    margin: 38px 31px;
+}
+&__flex{
+    display: flex;
+}
+&__icon{
+    width: 30px;
+    height: 32px;
+}
+&__number{
+    font-family: 'Monserrat', sans-serif;
+font-weight: 400;
+font-size: 36px;
+line-height: 146%;
+color: $SecondaryTextColor;
+}
+&__span{
+    font-family:'Monserrat', sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 158%;
+color: $TextColor;
+padding-top: 4px;
+}
+}
+ @media screen and (min-width:480px){
+    
+    
+ }

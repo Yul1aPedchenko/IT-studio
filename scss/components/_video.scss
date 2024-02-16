@@ -1,18 +1,17 @@
-.video {
+.video{
   background-image: -webkit-image-set(
-    url(../img/header/background-desktop@1x.webp) 1x,
-    url(../img/header/background-desktop@2x.webp) 2x
+      url(/img/header/background-desktop@1x.webp) 1x,
+      url(/img/header/background-desktop@2x.webp) 2x
   );
 
   background-image: image-set(
-    url(../img/header/background-desktop@1x.jpg) 1x,
-    url(../img/header/background-desktop@2x.jpg) 2x
+      url(/img/header/background-desktop@1x.jpg) 1x,
+      url(/img/header/background-desktop@2x.jpg) 2x
   );
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
-.video__title {
+.video__title{
   color: $PrimaryTextColor;
   font-weight: 700;
   font-size: 36px;
@@ -21,7 +20,7 @@
   justify-content: center;
   padding-top: 70px;
 }
-.video__text {
+.video__text{
   color: $PrimaryTextColor;
   font-weight: 400;
   font-size: 16px;
@@ -30,27 +29,46 @@
   justify-content: center;
   margin-top: 30px;
 }
-.video__mini-film {
+.video__mini-film{
   display: flex;
   justify-content: center;
   position: relative;
-  top: 70px;
-  border-bottom: 1px solid $LineColor;
+  top: 150px;
   padding-bottom: 85px;
+  border-bottom: 1px solid $LineColor;
+}
+video{
+  width: 970px; 
+  height: 430px;
+}
+@media screen and (max-width: 767px){
+  .video{
+      display: none;
+  }
+}
+@media screen and (max-width: 1199px){
+  video{
+      width: 659px;
+      height: 292px;
+  }
+  .video__mini-film{
+      top: 70px;
+  }
 }
 
-@media screen and (max-width: 1199px) {
-  .video {
-    background-image: url(../img/header/background-tablet@1x.jpg);
 
-    background-image: -webkit-image-set(
-      url(../img/header/background-tablet@1x.webp) 1x,
-      url(../img/header/background-tablet@2x.webp) 2x
-    );
+@media screen and (max-width: 1199px){
+  .video{
+      background-image: url(/img/header/background-tablet@1x.jpg);
 
-    background-image: image-set(
-      url(../img/header/background-tablet@1x.jpg) 1x,
-      url(../img/header/background-tablet@2x.jpg) 2x
-    );
+      background-image: -webkit-image-set(
+      url(/img/header/background-tablet@1x.webp) 1x,
+      url(/img/header/background-tablet@2x.webp) 2x
+      );
+
+      background-image: image-set(
+          url(/img/header/background-tablet@1x.jpg) 1x,
+          url(/img/header/background-tablet@2x.jpg) 2x
+      );
   }
 }
