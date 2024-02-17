@@ -341,6 +341,7 @@ body {
 }
 .benefits__wraper {
   border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 50px;
 }
 .benefits__text {
   max-width: 489px;
