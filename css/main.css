@@ -336,7 +336,11 @@ body {
   width: 100px;
   border: 1px solid #4985FF;
   border-radius: 50px;
-  padding: 25px;
+  width: 90px;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .about__subtitle {
   padding-top: 20px;
@@ -393,12 +397,17 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .about__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 21px;
+  }
+  .about__item:nth-child(2n) {
+    margin-bottom: 40px;
   }
   .about__item:last-child {
     display: -webkit-box;

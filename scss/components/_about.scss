@@ -32,7 +32,9 @@
     width: 100px;
     border: 1px solid $AccentColor;
     border-radius: 50px;
-    padding: 25px;
+  width: 90px;
+  height: 90px;
+  align-items: center;
   }
   &__subtitle {
     padding-top: 20px;
@@ -57,7 +59,6 @@
     color: $PrimaryTextColor;
     padding: 15px 46px;
     background-color: $AccentColor;
-    
     border: none;
     cursor: pointer;
     border-radius: 30px;
@@ -82,10 +83,13 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
     &__item {
       display: flex;
-      margin-left: 21px;
+      &:nth-child(2n){
+        margin-bottom: 40px;
+      }
       &:last-child {
         display: flex;
       }
