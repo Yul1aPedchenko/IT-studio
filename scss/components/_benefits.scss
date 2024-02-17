@@ -1,5 +1,8 @@
 .benefits {
   padding: 40px 0;
+  &__wraper {
+    border-bottom: 1px solid $LineColor;
+  }
   &__text {
     max-width: 489px;
   }
@@ -33,15 +36,7 @@
     padding-bottom: 50px;
     cursor: pointer;
   }
-  &__link::after {
-    content: "";
-    display: block;
-    min-width: 290px;
-    max-width: 500%;
-    height: 1px;
-    background-color: $LineColor;
-    margin-top: 50px;
-  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;

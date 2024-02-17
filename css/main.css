@@ -339,6 +339,9 @@ body {
 .benefits {
   padding: 40px 0;
 }
+.benefits__wraper {
+  border-bottom: 1px solid #E0E0E0;
+}
 .benefits__text {
   max-width: 489px;
 }
@@ -373,15 +376,6 @@ body {
   padding-bottom: 50px;
   cursor: pointer;
 }
-.benefits__link::after {
-  content: "";
-  display: block;
-  min-width: 290px;
-  max-width: 500%;
-  height: 1px;
-  background-color: #E0E0E0;
-  margin-top: 50px;
-}
 .benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,10 +383,11 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 40px;
+  padding: 0 22px;
   padding-bottom: 40px;
-  margin-left: 30px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .benefits__item:not(:last-child) {
   margin-bottom: 30px;
