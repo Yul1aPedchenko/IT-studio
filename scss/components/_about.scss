@@ -19,86 +19,88 @@
     line-height: 158%;
     padding-bottom: 40px;
   }
-  &__item{
+  &__item {
     margin-bottom: 40px;
-    &:last-child{
+    &:last-child {
       display: none;
     }
   }
 
-  &__icon-wrap{
+  &__icon-wrap {
     display: flex;
     justify-content: center;
     width: 100px;
     border: 1px solid $AccentColor;
     border-radius: 50px;
     padding: 25px;
-
   }
-  &__subtitle{
+  &__subtitle {
     padding-top: 20px;
     padding-bottom: 15px;
     text-align: center;
     font-size: 18px;
   }
-  &__subtext{
-font-weight: 400;
-line-height: 158%;
-color: $TextColor;
-text-align: center;
+  &__subtext {
+    font-weight: 400;
+    line-height: 158%;
+    color: $TextColor;
+    text-align: center;
   }
-  &__btn{
+  &__btn-wrap{
     display: flex;
     justify-content: center;
-font-weight: 500;
-font-size: 16px;
-text-align: center;
-color: $PrimaryTextColor;
-padding: 15px 46px;
-background-color: $AccentColor;
-border: none;
-cursor: pointer;
-border-radius: 30px;
-margin-top: 30px;
-&:hover{
-  color: $AccentColor;
-  background-color: none;
-  border: 1px solid $AccentColor;
-}
+  }
+  &__btn {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: $PrimaryTextColor;
+    padding: 15px 46px;
+    background-color: $AccentColor;
+    
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 30px;
+    &:hover {
+      color: $AccentColor;
+      background-color: none;
+      border: 1px solid $AccentColor;
+    }
   }
 }
-@media screen and (min-width:768px){
-  .about{
+@media screen and (min-width: 768px) {
+  .about {
     padding-top: 70px;
     padding-bottom: 70px;
-    &__text-wrap{
+    &__text-wrap {
       max-width: 713px;
     }
-    &__title{
+    &__title {
       font-size: 36px;
     }
-    &__list{
+    &__list {
       display: flex;
       flex-wrap: wrap;
     }
-    &__item{
+    &__item {
       display: flex;
       margin-left: 21px;
-      &:last-child{
+      &:last-child {
         display: flex;
       }
     }
-      &__icon-wrap{
+    &__icon-wrap {
       margin-right: 27px;
-      }
-      &__subtitle{
-text-align: left;
-      }
-      &__subtext{
-        text-align: left;
-      }
+    }
+    &__subtitle {
+      text-align: left;
+    }
+    &__subtext {
+      text-align: left;
     }
   }
+}
 @media screen and (min-width: 1200px) {
   .about {
     padding-top: 110px;
@@ -108,16 +110,16 @@ text-align: left;
     }
     &__title {
       font-size: 36px;
-       margin-bottom: 32px;
+      margin-bottom: 32px;
     }
     &__text {
       font-size: 16px;
     }
-    &__list{
+    &__list {
       margin-top: 70px;
     }
-    &__item:last-child{
-display: none;
+    &__item:last-child {
+      display: none;
     }
   }
 }
