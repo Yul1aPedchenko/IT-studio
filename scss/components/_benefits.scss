@@ -93,9 +93,14 @@
     padding: 70px 17px;
     &__wraper {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     &__image {
       order: 2;
+    }
+    &__title{
+      font-size: 30px;
     }
     &__text {
       width: 355px;
@@ -118,10 +123,8 @@
     &__image {
       width: 500px;
     }
-    &__text {
-      margin-top: 90px;
-      margin-right: 191px;
-      margin-left: 70px;
+    &__title{
+      font-size: 36px;
     }
     &__link {
       padding-bottom: 143px;
