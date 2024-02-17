@@ -21,6 +21,7 @@
   }
   &__item {
     margin-bottom: 40px;
+    margin: 0 auto;
     &:last-child {
       display: none;
     }
@@ -29,6 +30,7 @@
   &__icon-wrap {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     width: 100px;
     border: 1px solid $AccentColor;
     border-radius: 50px;

@@ -322,6 +322,7 @@ body {
 }
 .about__item {
   margin-bottom: 40px;
+  margin: 0 auto;
 }
 .about__item:last-child {
   display: none;
@@ -333,6 +334,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
   width: 100px;
   border: 1px solid #4985FF;
   border-radius: 50px;
