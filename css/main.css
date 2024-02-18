@@ -327,22 +327,9 @@ body {
 .about__item:last-child {
   display: none;
 }
-.about__icon-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  width: 100px;
-  border: 1px solid #4985FF;
-  border-radius: 50px;
-  width: 90px;
-  height: 90px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.about__icon {
+  width: 110px;
+  height: 110px;
 }
 .about__subtitle {
   padding-top: 20px;
@@ -621,9 +608,9 @@ body {
 }
 
 .video {
-  background-image: -webkit-image-set(url(/img/header/background-desktop@1x.webp) 1x, url(/img/header/background-desktop@2x.webp) 2x);
-  background-image: -webkit-image-set(url(/img/header/background-desktop@1x.jpg) 1x, url(/img/header/background-desktop@2x.jpg) 2x);
-  background-image: image-set(url(/img/header/background-desktop@1x.jpg) 1x, url(/img/header/background-desktop@2x.jpg) 2x);
+  background-image: -webkit-image-set(url(../img/header/background-desktop@1x.webp) 1x, url(../img/header/background-desktop@2x.webp) 2x);
+  background-image: -webkit-image-set(url(../img/header/background-desktop@1x.jpg) 1x, url(../img/header/background-desktop@2x.jpg) 2x);
+  background-image: image-set(url(../img/header/background-desktop@1x.jpg) 1x, url(../img/header/background-desktop@2x.jpg) 2x);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -693,10 +680,10 @@ video {
 }
 @media screen and (max-width: 1199px) {
   .video {
-    background-image: url(/img/header/background-tablet@1x.jpg);
-    background-image: -webkit-image-set(url(/img/header/background-tablet@1x.webp) 1x, url(/img/header/background-tablet@2x.webp) 2x);
-    background-image: -webkit-image-set(url(/img/header/background-tablet@1x.jpg) 1x, url(/img/header/background-tablet@2x.jpg) 2x);
-    background-image: image-set(url(/img/header/background-tablet@1x.jpg) 1x, url(/img/header/background-tablet@2x.jpg) 2x);
+    background-image: url(../img/header/background-tablet@1x.jpg);
+    background-image: -webkit-image-set(url(../img/header/background-tablet@1x.webp) 1x, url(../img/header/background-tablet@2x.webp) 2x);
+    background-image: -webkit-image-set(url(../img/header/background-tablet@1x.jpg) 1x, url(../img/header/background-tablet@2x.jpg) 2x);
+    background-image: image-set(url(../img/header/background-tablet@1x.jpg) 1x, url(../img/header/background-tablet@2x.jpg) 2x);
   }
 }
 .form {

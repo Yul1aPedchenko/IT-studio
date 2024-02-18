@@ -26,17 +26,9 @@
       display: none;
     }
   }
-
-  &__icon-wrap {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100px;
-    border: 1px solid $AccentColor;
-    border-radius: 50px;
-  width: 90px;
-  height: 90px;
-  align-items: center;
+  &__icon {
+    width: 110px;
+    height: 110px;
   }
   &__subtitle {
     padding-top: 20px;
