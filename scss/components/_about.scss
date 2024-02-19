@@ -52,14 +52,14 @@
     text-align: center;
     color: $PrimaryTextColor;
     padding: 15px 46px;
-    background-color: $AccentColor;
+    background: $AccentColor;
     border: none;
     cursor: pointer;
     border-radius: 30px;
     margin-top: 30px;
     &:hover {
       color: $AccentColor;
-      background-color: none;
+      background: none;
       border: 1px solid $AccentColor;
     }
   }

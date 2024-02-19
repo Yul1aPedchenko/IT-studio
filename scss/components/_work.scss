@@ -1,6 +1,8 @@
 .work{
+    position: relative;
     padding-top: 40px;
     padding-bottom: 40px;
+    border-bottom: 1px solid $LineColor;
     &__background{
         background-image: $BackgroundGradient;
         width: 100%;
@@ -13,4 +15,82 @@ line-height: 146%;
 text-align: center;
 color: $PrimaryTextColor;
 }
+&__list{
+    position: absolute;
+    bottom: 230px;
+}
+&__item{
+    margin-top: 40px;
+}
+&__item:first-child{
+    display: none;
+}
+&__img-wrap{
+    width: 290px;
+}
+&__item-title{
+    font-weight: 600;
+font-size: 16px;
+color: $SecondaryTextColor;
+padding-top: 20px;
+}
+&__number{
+    font-weight: 600;
+    font-size: 16px;
+    color: $AccentColor;
+}
+&__text{
+    font-weight: 400;
+font-size: 14px;
+line-height: 158%;
+color: $TextColor;
+padding-top: 20px;
+}
+&__link{
+    font-weight: 500;
+font-size: 16px;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+color: $AccentColor;
+padding-top: 30px;
+padding-bottom: 40px;
+}
+&__btn-wrap{
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: $PrimaryTextColor;
+    padding: 15px 46px;
+    background: $AccentColor;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: 40px;
+  }
+    &__btn:hover{
+      color: $AccentColor;
+      background: none;
+      border: 1px solid $AccentColor;
+    }
+  }
+@media screen and (min-width:480px){
+    .work{
+        &__title{
+            font-size: 30px;
+        }
+    }
+}
+@media screen and (min-width:768px){
+    .work{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        &__title{
+            text-align: left;
+        }
+        
+    }
 }

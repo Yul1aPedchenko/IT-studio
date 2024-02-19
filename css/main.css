@@ -419,7 +419,7 @@ body {
   text-align: center;
   color: #FFFFFF;
   padding: 15px 46px;
-  background-color: #4985FF;
+  background: #4985FF;
   border: none;
   cursor: pointer;
   border-radius: 30px;
@@ -427,7 +427,7 @@ body {
 }
 .about__btn:hover {
   color: #4985FF;
-  background-color: none;
+  background: none;
   border: 1px solid #4985FF;
 }
 
@@ -653,8 +653,10 @@ body {
   }
 }
 .work {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
+  border-bottom: 1px solid #E0E0E0;
 }
 .work__background {
   background-image: -webkit-gradient(linear, left top, right top, from(#504dc2), to(#5f12d0));
@@ -669,7 +671,87 @@ body {
   text-align: center;
   color: #FFFFFF;
 }
+.work__list {
+  position: absolute;
+  bottom: 230px;
+}
+.work__item {
+  margin-top: 40px;
+}
+.work__item:first-child {
+  display: none;
+}
+.work__img-wrap {
+  width: 290px;
+}
+.work__item-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+  padding-top: 20px;
+}
+.work__number {
+  font-weight: 600;
+  font-size: 16px;
+  color: #4985FF;
+}
+.work__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 158%;
+  color: #999999;
+  padding-top: 20px;
+}
+.work__link {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #4985FF;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.work__btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.work__btn {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 15px 46px;
+  background: #4985FF;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-bottom: 40px;
+}
+.work__btn:hover {
+  color: #4985FF;
+  background: none;
+  border: 1px solid #4985FF;
+}
 
+@media screen and (min-width: 480px) {
+  .work__title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .work__title {
+    text-align: left;
+  }
+}
 .video {
   background-image: -webkit-image-set(url(../img/header/background-desktop@1x.webp) 1x, url(../img/header/background-desktop@2x.webp) 2x);
   background-image: -webkit-image-set(url(../img/header/background-desktop@1x.jpg) 1x, url(../img/header/background-desktop@2x.jpg) 2x);
