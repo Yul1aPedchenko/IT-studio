@@ -1,66 +1,67 @@
-.work{
-    position: relative;
-    padding-top: 40px;
+.work {
+  position: relative;
+  padding-top: 40px;
+  &__background {
+    background-image: $BackgroundGradient;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 302px;
+    margin-bottom: 482px;
+  }
+  &__wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__wrap {
+    position: absolute;
+    top: 258px;
     border-bottom: 1px solid $LineColor;
-    &__background{
-        background-image: $BackgroundGradient;
-        width: 100%;
-        height: 400px;
-    }
-    &__wrap{
-        position: relative;
-bottom: 380px;
-padding-bottom: -340px;
-    }
-&__title{
+  }
+  &__title {
     font-weight: 700;
-font-size: 24px;
-line-height: 146%;
-text-align: center;
-color: $PrimaryTextColor;
-}
-&__item{
+    font-size: 24px;
+    line-height: 146%;
+    text-align: center;
+    color: $PrimaryTextColor;
+  }
+  &__item {
     margin-top: 40px;
-}
-&__item:first-child,
-&__item:last-child{
+  }
+  &__item:first-child,
+  &__item:last-child {
     display: none;
-}
-&__img-wrap{
+  }
+  &__img-wrap {
     width: 290px;
-}
-&__item-title{
+  }
+  &__item-title {
     font-weight: 600;
-font-size: 16px;
-color: $SecondaryTextColor;
-padding-top: 20px;
-}
-&__number{
+    font-size: 16px;
+    color: $SecondaryTextColor;
+    padding-top: 20px;
+  }
+  &__number {
     font-weight: 600;
     font-size: 16px;
     color: $AccentColor;
-}
-&__text{
+  }
+  &__text {
     font-weight: 400;
-font-size: 14px;
-line-height: 158%;
-color: $TextColor;
-padding-top: 20px;
-padding-bottom: 30px;
-width: 301px;
-}
-&__link{
+    font-size: 14px;
+    line-height: 158%;
+    color: $TextColor;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    max-width: 301px;
+  }
+  &__link {
     font-weight: 500;
-font-size: 16px;
-text-decoration: underline;
-text-decoration-skip-ink: none;
-color: $AccentColor;
-// padding-top: 30px;
-}
-&__btn-wrap{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: $AccentColor;
+    // padding-top: 30px;
   }
   &__btn {
     font-weight: 500;
@@ -68,71 +69,62 @@ color: $AccentColor;
     text-align: center;
     color: $PrimaryTextColor;
     padding: 15px 46px;
-    background: $AccentColor;
+    background-color: $AccentColor;
     border: none;
     cursor: pointer;
     border-radius: 30px;
-    margin-bottom: 40px;
+    border: 1px solid $AccentColor;
+    transition: background-color 250ms ease-in-out;
   }
-    &__btn:hover{
-      color: $AccentColor;
-      background: none;
-      border: 1px solid $AccentColor;
+  &__btn:hover {
+    color: $AccentColor;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 480px) {
+  .work {
+    &__title {
+      font-size: 30px;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
   }
-@media screen and (min-width:480px){
-    .work{
-        &__title{
-            font-size: 30px;
-        }
-        &__list{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-    }
 }
-@media screen and (min-width:768px){
-    .work{
-        padding-top: 70px;
-        padding-bottom: 70px;
-        &__title{
-            text-align: left;
-            padding-top: 70px;
-        }
-        &__btn-wrap{
-            position: absolute;
-            bottom: 950px;
-            left: 530px;
-            padding-right: 0;
-        }
-       
-        &__item:first-child,
-        &__item:last-child{
-            display: block;
-        }
-        &__item:nth-child(odd){
-         margin-right: 55px;
-        }
-        
+@media screen and (min-width: 768px) {
+  .work {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &__title {
+      text-align: left;
     }
-}
-@media screen and (min-width:1200px){
-.work{
-    &__list{
-        flex-wrap: nowrap;
-        justify-content: center;
+    &__item:first-child,
+    &__item:last-child {
+      display: block;
     }
-    &__item:last-child{
+    &__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__mobile-btn {
         display: none;
     }
-    &__item:nth-child(even){
-        margin-right: 55px;
-       }
-    &__btn-wrap{
-        bottom: 470px;
-        right: -220px;
-    }
+  }
 }
+@media screen and (min-width: 1200px) {
+  .work {
+    &__list {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    &__item:last-child {
+      display: none;
+    }
+    &__title {
+      max-width: 540px;
+    }
+  }
 }
