@@ -1,12 +1,16 @@
 .work{
     position: relative;
     padding-top: 40px;
-    padding-bottom: 40px;
     border-bottom: 1px solid $LineColor;
     &__background{
         background-image: $BackgroundGradient;
         width: 100%;
         height: 400px;
+    }
+    &__wrap{
+        position: relative;
+bottom: 380px;
+padding-bottom: -340px;
     }
 &__title{
     font-weight: 700;
@@ -15,14 +19,11 @@ line-height: 146%;
 text-align: center;
 color: $PrimaryTextColor;
 }
-&__list{
-    position: absolute;
-    bottom: 230px;
-}
 &__item{
     margin-top: 40px;
 }
-&__item:first-child{
+&__item:first-child,
+&__item:last-child{
     display: none;
 }
 &__img-wrap{
@@ -45,6 +46,8 @@ font-size: 14px;
 line-height: 158%;
 color: $TextColor;
 padding-top: 20px;
+padding-bottom: 30px;
+width: 301px;
 }
 &__link{
     font-weight: 500;
@@ -52,12 +55,12 @@ font-size: 16px;
 text-decoration: underline;
 text-decoration-skip-ink: none;
 color: $AccentColor;
-padding-top: 30px;
-padding-bottom: 40px;
+// padding-top: 30px;
 }
 &__btn-wrap{
     display: flex;
     justify-content: center;
+    margin-top: 40px;
   }
   &__btn {
     font-weight: 500;
@@ -82,6 +85,12 @@ padding-bottom: 40px;
         &__title{
             font-size: 30px;
         }
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 @media screen and (min-width:768px){
@@ -90,7 +99,40 @@ padding-bottom: 40px;
         padding-bottom: 70px;
         &__title{
             text-align: left;
+            padding-top: 70px;
+        }
+        &__btn-wrap{
+            position: absolute;
+            bottom: 950px;
+            left: 530px;
+            padding-right: 0;
+        }
+       
+        &__item:first-child,
+        &__item:last-child{
+            display: block;
+        }
+        &__item:nth-child(odd){
+         margin-right: 55px;
         }
         
     }
+}
+@media screen and (min-width:1200px){
+.work{
+    &__list{
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    &__item:last-child{
+        display: none;
+    }
+    &__item:nth-child(even){
+        margin-right: 55px;
+       }
+    &__btn-wrap{
+        bottom: 470px;
+        right: -220px;
+    }
+}
 }
