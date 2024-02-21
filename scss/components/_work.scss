@@ -77,7 +77,6 @@
     transition: background-color 250ms ease-in-out;
   }
   &__btn:hover {
-    color: $AccentColor;
     background-color: transparent;
   }
 }
@@ -116,6 +115,10 @@
 }
 @media screen and (min-width: 1200px) {
   .work {
+    &__wrap {
+      padding-bottom: 85px;
+      top: 258px;
+    }
     &__list {
       flex-wrap: nowrap;
       justify-content: space-between;
@@ -126,5 +129,6 @@
     &__title {
       max-width: 540px;
     }
+
   }
 }
