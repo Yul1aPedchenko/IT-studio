@@ -26,13 +26,10 @@
       display: none;
     }
   }
-  &__image{
-    display: flex;
-    justify-content: center;
-  }
   &__icon {
     width: 110px;
     height: 110px;
+    margin: 0 auto;
   }
   &__subtitle {
     padding-top: 20px;

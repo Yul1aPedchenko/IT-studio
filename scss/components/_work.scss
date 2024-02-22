@@ -10,6 +10,8 @@
   }
   &__wraper {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &__wrap {
     position: absolute;
@@ -17,6 +19,7 @@
     border-bottom: 1px solid $LineColor;
   }
   &__title {
+    max-width: 413px;
     font-weight: 700;
     font-size: 24px;
     line-height: 146%;
@@ -67,7 +70,7 @@
     font-size: 16px;
     text-align: center;
     color: $PrimaryTextColor;
-    padding: 15px 46px;
+    padding: 14px 46px;
     background-color: $AccentColor;
     cursor: pointer;
     border-radius: 30px;
@@ -102,6 +105,9 @@
   }
 @media screen and (min-width: 480px) {
   .work {
+    &__background{
+      margin-bottom: 913px;
+    }
     &__title {
       font-size: 30px;
     }
@@ -114,6 +120,9 @@
   .work {
     padding-top: 70px;
     padding-bottom: 70px;
+    &__background{
+      margin-bottom: 888px;
+    }
     &__title {
       text-align: left;
     }
@@ -129,6 +138,7 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+      padding: 0 40px;
     }
     &__mobile-btn {
         display: none;
@@ -140,6 +150,9 @@
 }
 @media screen and (min-width: 1200px) {
   .work {
+    &__background{
+      margin-bottom: 342px;
+    }
     &__wrap {
       padding-bottom: 85px;
       top: 258px;
