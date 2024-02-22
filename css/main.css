@@ -841,6 +841,102 @@ body {
     max-width: 540px;
   }
 }
+.project {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.project__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 146%;
+  text-align: center;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.project__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 158%;
+  text-align: center;
+  color: #999999;
+  text-align: center;
+}
+.project__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.project__item {
+  margin-top: 40px;
+}
+.project__item:first-child, .project__item:last-child {
+  display: none;
+}
+.project__btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.project__btn {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 15px 46px;
+  background: #4985FF;
+  border: 1px solid #4985FF;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+.project__btn:hover {
+  color: #4985FF;
+  background: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .project__text {
+    font-size: 14px;
+  }
+  .project__list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .project__item:first-child, .project__item:last-child {
+    display: block;
+  }
+  .project__btn {
+    margin-top: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .project__text {
+    font-size: 16px;
+  }
+  .project__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 .video {
   background-image: -webkit-image-set(url(../img/header/background-desktop@1x.webp) 1x, url(../img/header/background-desktop@2x.webp) 2x);
   background-image: -webkit-image-set(url(../img/header/background-desktop@1x.jpg) 1x, url(../img/header/background-desktop@2x.jpg) 2x);
