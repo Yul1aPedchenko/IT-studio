@@ -902,10 +902,18 @@ body {
   background: transparent;
 }
 
+@media screen and (min-width: 480px) {
+  .project__title {
+    font-size: 24px;
+  }
+}
 @media screen and (min-width: 768px) {
   .project {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+  .project__title {
+    font-size: 30px;
   }
   .project__text {
     font-size: 14px;
@@ -928,6 +936,9 @@ body {
   .project {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .project__title {
+    font-size: 36px;
   }
   .project__text {
     font-size: 16px;
