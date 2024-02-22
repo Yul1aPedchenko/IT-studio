@@ -43,7 +43,7 @@
     color: $TextColor;
     text-align: center;
   }
-  &__btn-wrap{
+  &__btn-wrap {
     display: flex;
     justify-content: center;
   }
@@ -53,15 +53,16 @@
     text-align: center;
     color: $PrimaryTextColor;
     padding: 15px 46px;
-    background: $AccentColor;
+    background-color: $AccentColor;
     border: none;
     cursor: pointer;
     border-radius: 30px;
     margin-top: 30px;
+    border: 1px solid $AccentColor;
+    transition: background-color 250ms ease-in-out;
     &:hover {
       color: $AccentColor;
-      background: none;
-      border: 1px solid $AccentColor;
+      background-color: transparent;
     }
   }
 }
@@ -82,7 +83,7 @@
     }
     &__item {
       display: flex;
-      &:nth-child(2n){
+      &:nth-child(2n) {
         margin-bottom: 40px;
       }
       &:last-child {

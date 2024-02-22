@@ -37,7 +37,6 @@
     padding-bottom: 50px;
     cursor: pointer;
   }
-
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -56,6 +55,7 @@
   &__icon {
     width: 30px;
     height: 32px;
+    margin-right: 10px;
   }
   &__number {
     font-family: "Monserrat", sans-serif;
@@ -99,7 +99,7 @@
     &__image {
       order: 2;
     }
-    &__title{
+    &__title {
       font-size: 30px;
     }
     &__text {
@@ -123,7 +123,7 @@
     &__image {
       width: 500px;
     }
-    &__title{
+    &__title {
       font-size: 36px;
     }
     &__link {

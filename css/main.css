@@ -420,16 +420,18 @@ body {
   text-align: center;
   color: #FFFFFF;
   padding: 15px 46px;
-  background: #4985FF;
+  background-color: #4985FF;
   border: none;
   cursor: pointer;
   border-radius: 30px;
   margin-top: 30px;
+  border: 1px solid #4985FF;
+  -webkit-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
 }
 .about__btn:hover {
   color: #4985FF;
-  background: none;
-  border: 1px solid #4985FF;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -566,6 +568,7 @@ body {
 .benefits__icon {
   width: 30px;
   height: 32px;
+  margin-right: 10px;
 }
 .benefits__number {
   font-family: "Monserrat", sans-serif;
@@ -767,6 +770,7 @@ body {
   transition: background-color 250ms ease-in-out;
 }
 .work__mobile-btn:hover {
+  color: #4985FF;
   background-color: transparent;
 }
 
@@ -779,6 +783,13 @@ body {
   }
   .work__wrap {
     margin: auto;
+  }
+  .work__img-wrap {
+    width: 301px;
+  }
+  .work__list {
+    margin-left: 75px;
+    margin-right: 74px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -804,13 +815,12 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0 40px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    max-width: 738px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .work__mobile-btn {
     display: none;
@@ -833,12 +843,20 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 0 0;
+    max-width: none;
   }
   .work__item:last-child {
     display: none;
   }
   .work__title {
     max-width: 540px;
+  }
+  .work__item:nth-child(-n+2) {
+    margin-right: 60px;
+  }
+  .work__img-wrap {
+    width: 350px;
   }
 }
 .project {
@@ -891,15 +909,17 @@ body {
   text-align: center;
   color: #FFFFFF;
   padding: 15px 46px;
-  background: #4985FF;
+  background-color: #4985FF;
   border: 1px solid #4985FF;
   cursor: pointer;
   border-radius: 30px;
   margin-top: 40px;
+  -webkit-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
 }
 .project__btn:hover {
   color: #4985FF;
-  background: transparent;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 480px) {

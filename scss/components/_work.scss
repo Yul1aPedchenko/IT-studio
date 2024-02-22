@@ -80,13 +80,13 @@
   &__btn:hover {
     background-color: transparent;
   }
-  &__btn-wrap-mobile{
+  &__btn-wrap-mobile {
     display: flex;
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  &__mobile-btn{
+  &__mobile-btn {
     font-weight: 500;
     font-size: 16px;
     color: $PrimaryTextColor;
@@ -99,34 +99,41 @@
     transition: background-color 250ms ease-in-out;
   }
   &__mobile-btn:hover {
+    color: $AccentColor;
     background-color: transparent;
   }
-
-  }
+}
 @media screen and (min-width: 480px) {
   .work {
-    &__background{
+    &__background {
       margin-bottom: 913px;
     }
     &__title {
       font-size: 30px;
     }
-&__wrap{
- margin: auto;
+    &__wrap {
+      margin: auto;
+    }
+    &__img-wrap {
+      width: 301px;
+    }
+    &__list {
+    margin-left: 75px;
+    margin-right: 74px;
   }
-}
+  }
 }
 @media screen and (min-width: 768px) {
   .work {
     padding-top: 70px;
     padding-bottom: 70px;
-    &__background{
+    &__background {
       margin-bottom: 888px;
     }
     &__title {
       text-align: left;
     }
-    &__wrap{
+    &__wrap {
       margin: 0 auto;
     }
     &__item:first-child,
@@ -136,21 +143,22 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 0 40px;
+      justify-content: space-evenly;
+      max-width: 738px;
+      margin-left: 0;
+      margin-right: 0;
     }
     &__mobile-btn {
-        display: none;
+      display: none;
     }
-    &__btn{
+    &__btn {
       display: block;
     }
   }
 }
 @media screen and (min-width: 1200px) {
   .work {
-    &__background{
+    &__background {
       margin-bottom: 342px;
     }
     &__wrap {
@@ -160,6 +168,8 @@
     &__list {
       flex-wrap: nowrap;
       justify-content: space-between;
+      padding: 0 0;
+      max-width: none;
     }
     &__item:last-child {
       display: none;
@@ -167,6 +177,11 @@
     &__title {
       max-width: 540px;
     }
-
+    &__item:nth-child(-n + 2) {
+      margin-right: 60px;
+    }
+    &__img-wrap {
+      width: 350px;
+    }
   }
 }

@@ -1,35 +1,35 @@
-.project{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    &__title{
-        font-weight: 700;
-font-size: 20px;
-line-height: 146%;
-text-align: center;
-padding-bottom: 20px;
-text-align: center;
-    }
-    &__text{
-        font-weight: 400;
-font-size: 12px;
-line-height: 158%;
-text-align: center;
-color: $TextColor;
-text-align: center;
-    }
-    &__list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    &__item{
-        margin-top: 40px;
-    }
-&__item:first-child,
-&__item:last-child{
+.project {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 146%;
+    text-align: center;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 158%;
+    text-align: center;
+    color: $TextColor;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__item {
+    margin-top: 40px;
+  }
+  &__item:first-child,
+  &__item:last-child {
     display: none;
-}
-&__btn-wrap{
+  }
+  &__btn-wrap {
     display: flex;
     justify-content: center;
   }
@@ -39,57 +39,58 @@ text-align: center;
     text-align: center;
     color: $PrimaryTextColor;
     padding: 15px 46px;
-    background: $AccentColor;
+    background-color: $AccentColor;
     border: 1px solid $AccentColor;
     cursor: pointer;
     border-radius: 30px;
     margin-top: 40px;
+    transition: background-color 250ms ease-in-out;
     &:hover {
       color: $AccentColor;
-      background: transparent;
+      background-color: transparent;
     }
   }
 }
-@media screen and (min-width:480px){
-    .project__title{
-        font-size: 24px;
+@media screen and (min-width: 480px) {
+  .project__title {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &__title {
+      font-size: 30px;
     }
-}
-@media screen and (min-width:768px){
-    .project{
-padding-top: 70px;
-padding-bottom: 70px;
-&__title{
-    font-size: 30px;
-}
-&__text{
-    font-size: 14px;
-}
-&__list{
-    align-items: center;
-    justify-content: space-around;
-}
-&__item:first-child,
-&__item:last-child{
-    display: block;
-}
-&__btn{
-    margin-top: 70px;
-}
+    &__text {
+      font-size: 14px;
     }
-}
-@media screen and (min-width:1200px){
-    .project{
-        padding-top: 100px;
-        padding-bottom: 100px;
-        &__title{
-            font-size: 36px;
-        }
-        &__text{
-            font-size: 16px;
-        }
-        &__list{
-            flex-wrap: nowrap;
-        }
+    &__list {
+      align-items: center;
+      justify-content: space-around;
     }
+    &__item:first-child,
+    &__item:last-child {
+      display: block;
+    }
+    &__btn {
+      margin-top: 70px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &__title {
+      font-size: 36px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__list {
+      flex-wrap: nowrap;
+    }
+  }
 }
