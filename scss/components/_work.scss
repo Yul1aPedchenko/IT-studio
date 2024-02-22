@@ -6,12 +6,10 @@
     width: 100%;
     padding-top: 100px;
     padding-bottom: 302px;
-    margin-bottom: 482px;
+    margin-bottom: 882px;
   }
   &__wraper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   &__wrap {
     position: absolute;
@@ -61,12 +59,33 @@
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: $AccentColor;
-    // padding-top: 30px;
   }
+
   &__btn {
+    display: none;
     font-weight: 500;
     font-size: 16px;
     text-align: center;
+    color: $PrimaryTextColor;
+    padding: 15px 46px;
+    background-color: $AccentColor;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid $AccentColor;
+    transition: background-color 250ms ease-in-out;
+  }
+  &__btn:hover {
+    background-color: transparent;
+  }
+  &__btn-wrap-mobile{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  &__mobile-btn{
+    font-weight: 500;
+    font-size: 16px;
     color: $PrimaryTextColor;
     padding: 15px 46px;
     background-color: $AccentColor;
@@ -76,22 +95,20 @@
     border: 1px solid $AccentColor;
     transition: background-color 250ms ease-in-out;
   }
-  &__btn:hover {
+  &__mobile-btn:hover {
     background-color: transparent;
   }
-}
+
+  }
 @media screen and (min-width: 480px) {
   .work {
     &__title {
       font-size: 30px;
     }
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
+&__wrap{
+ margin: auto;
   }
+}
 }
 @media screen and (min-width: 768px) {
   .work {
@@ -100,16 +117,24 @@
     &__title {
       text-align: left;
     }
+    &__wrap{
+      margin: 0 auto;
+    }
     &__item:first-child,
     &__item:last-child {
       display: block;
     }
     &__list {
-        display: flex;
-        justify-content: space-around;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
     &__mobile-btn {
         display: none;
+    }
+    &__btn{
+      display: block;
     }
   }
 }
