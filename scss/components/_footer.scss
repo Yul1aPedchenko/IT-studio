@@ -75,7 +75,11 @@
 .footer__link-contact{
     color: $TextColor;
 }
-
+.footer__link-item > svg,
+.footer__project-item > svg,
+.footer__social-item > svg{
+    margin-right: 10px;
+}
 .footer__social-title{
     margin-top: 40px;
     margin-bottom: 9px;
@@ -142,8 +146,16 @@
     .footer__wrap{
         align-items: center;
     }
-    .footer__link-title{
-        margin-top: 40px;
+    .footer__contact-title{
         margin-bottom: 9px;
+    }
+    .footer__link-title{
+        margin: 0;
+    }
+    .footer__project-title{
+        margin: 0;
+    }
+    .footer__social-title{
+        margin: 0;
     }
 }

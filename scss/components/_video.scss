@@ -1,16 +1,16 @@
-.video{
-  background-image: -webkit-image-set(
-      url(../img/header/background-desktop@1x.webp) 1x,
-      url(../img/header/background-desktop@2x.webp) 2x
-  );
+// .video{
+//     background-image: -webkit-image-set(
+//         url(/img/header/background-desktop@1x.webp) 1x,
+//         url(/img/header/background-desktop@2x.webp) 2x
+//     );
 
-  background-image: image-set(
-      url(../img/header/background-desktop@1x.jpg) 1x,
-      url(../img/header/background-desktop@2x.jpg) 2x
-  );
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+//     background-image: image-set(
+//         url(/img/header/background-desktop@1x.jpg) 1x,
+//         url(/img/header/background-desktop@2x.jpg) 2x
+//     );
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
 .video__title{
   color: $PrimaryTextColor;
   font-weight: 700;
@@ -18,7 +18,22 @@
   line-height: 146%;
   display: flex;
   justify-content: center;
+}
+.video__background{
+      background-image: -webkit-image-set(
+      url(../img/video/background-tablet@1x.webp) 1x,
+      url(../img/video/background-tablet@2x.webp) 2x
+  );
+
+  background-image: image-set(
+      url(../img/video/background-tablet@1x.jpg) 1x,
+      url(../img/video/background-tablet@2x.jpg) 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+
   padding-top: 70px;
+  padding-bottom: 420px;
 }
 .video__text{
   color: $PrimaryTextColor;
@@ -27,19 +42,20 @@
   line-height: 158%;
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
 .video__mini-film{
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 150px;
+  position: absolute;
+  top: 220px;
+  margin-left: 70px;
   padding-bottom: 85px;
   border-bottom: 1px solid $LineColor;
 }
 video{
   width: 970px; 
   height: 430px;
+  position: relative;
   box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25);
   border-radius: 10px;
 }
@@ -59,18 +75,18 @@ video{
 }
 
 
-@media screen and (max-width: 1199px){
-  .video{
-      background-image: url(../img/header/background-tablet@1x.jpg);
+@media screen and (min-width: 1200px){
+  .video__background{
+      background-image: url(../img/video/background-desktop@1x.jpg);
 
       background-image: -webkit-image-set(
-      url(../img/header/background-tablet@1x.webp) 1x,
-      url(../img/header/background-tablet@2x.webp) 2x
+      url(../img/video/background-desktop@1x.webp) 1x,
+      url(../img/video/background-desktop@2x.webp) 2x
       );
 
       background-image: image-set(
-          url(../img/header/background-tablet@1x.jpg) 1x,
-          url(../img/header/background-tablet@2x.jpg) 2x
+          url(../img/video/background-desktop@1x.jpg) 1x,
+          url(../img/video/background-desktop@2x.jpg) 2x
       );
   }
 }
