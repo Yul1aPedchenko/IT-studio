@@ -804,7 +804,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .work {
-    padding-top: 70px;
     padding-bottom: 70px;
   }
   .work__background {
