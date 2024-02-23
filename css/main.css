@@ -665,7 +665,6 @@ body {
 }
 .work {
   position: relative;
-  padding-top: 40px;
 }
 .work__background {
   background-image: -webkit-gradient(linear, left top, right top, from(#504dc2), to(#5f12d0));
@@ -811,6 +810,9 @@ body {
   .work__background {
     margin-bottom: 888px;
   }
+  .work__list {
+    padding-bottom: 70px;
+  }
   .work__wrap {
     top: 258px;
   }
@@ -842,10 +844,14 @@ body {
   .work__btn {
     display: block;
   }
+  .work__btn-wrap-mobile {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .work__background {
     margin-bottom: 342px;
+    padding-top: 100px;
   }
   .work__wrap {
     padding-bottom: 85px;

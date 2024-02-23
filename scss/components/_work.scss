@@ -1,6 +1,5 @@
 .work {
   position: relative;
-  padding-top: 40px;
   &__background {
     background-image: $BackgroundGradient;
     width: 100%;
@@ -133,6 +132,9 @@
     &__background {
       margin-bottom: 888px;
     }
+    &__list{
+     padding-bottom: 70px;
+    }
     &__wrap{
       top: 258px;
     }
@@ -160,12 +162,16 @@
     &__btn {
       display: block;
     }
+    &__btn-wrap-mobile{
+      display: none;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
   .work {
     &__background {
       margin-bottom: 342px;
+      padding-top: 100px;
     }
     &__wrap {
       padding-bottom: 85px;
