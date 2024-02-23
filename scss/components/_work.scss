@@ -4,7 +4,7 @@
   &__background {
     background-image: $BackgroundGradient;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 302px;
     margin-bottom: 882px;
   }
@@ -15,7 +15,7 @@
   }
   &__wrap {
     position: absolute;
-    top: 258px;
+    top: 178px;
     border-bottom: 1px solid $LineColor;
   }
   &__title {
@@ -129,6 +129,9 @@
     padding-bottom: 70px;
     &__background {
       margin-bottom: 888px;
+    }
+    &__wrap{
+      top: 258px;
     }
     &__title {
       text-align: left;
