@@ -609,9 +609,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .benefits {
-    padding: 70px 17px;
-  }
   .benefits__wraper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -802,9 +799,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .work {
-    padding-bottom: 70px;
-  }
   .work__background {
     margin-bottom: 888px;
   }
