@@ -545,6 +545,8 @@ body {
 .benefits__image {
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
 }
 .benefits__list {
   display: -webkit-box;
@@ -707,6 +709,8 @@ body {
   width: 290px;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
 }
 .work__item-title {
   font-weight: 600;
@@ -904,12 +908,11 @@ body {
   margin-top: 40px;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
 }
 .project__item:first-child, .project__item:last-child {
   display: none;
-}
-.project__img {
-  border-radius: 10px;
 }
 .project__btn-wrap {
   display: -webkit-box;
