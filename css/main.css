@@ -384,7 +384,6 @@ body {
 }
 .about__item {
   margin-bottom: 40px;
-  margin: 0 auto;
 }
 .about__item:last-child {
   display: none;
@@ -849,7 +848,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .work__background {
-    margin-bottom: 342px;
+    margin-bottom: 482px;
     padding-top: 100px;
   }
   .work__wrap {
@@ -898,6 +897,8 @@ body {
   text-align: center;
   color: #999999;
   text-align: center;
+  max-width: 730px;
+  margin: 0 auto;
 }
 .project__list {
   display: -webkit-box;

@@ -17,6 +17,8 @@
     text-align: center;
     color: $TextColor;
     text-align: center;
+    max-width: 730px;
+    margin: 0 auto;
   }
   &__list {
     display: flex;
