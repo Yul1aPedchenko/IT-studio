@@ -1,16 +1,6 @@
-// .video{
-//     background-image: -webkit-image-set(
-//         url(/img/header/background-desktop@1x.webp) 1x,
-//         url(/img/header/background-desktop@2x.webp) 2x
-//     );
-
-//     background-image: image-set(
-//         url(/img/header/background-desktop@1x.jpg) 1x,
-//         url(/img/header/background-desktop@2x.jpg) 2x
-//     );
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
+.video{
+  position: relative;
+}
 .video__title{
   color: $PrimaryTextColor;
   font-weight: 700;
@@ -55,7 +45,6 @@
 video{
   width: 970px; 
   height: 430px;
-  position: relative;
   box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25);
   border-radius: 10px;
 }
