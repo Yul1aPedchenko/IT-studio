@@ -21,7 +21,6 @@
   );
   background-repeat: no-repeat;
   background-size: cover;
-
   padding-top: 70px;
   padding-bottom: 420px;
 }
@@ -38,7 +37,7 @@
   justify-content: center;
   position: absolute;
   top: 220px;
-  margin-left: 70px;
+  padding: 0 70px;
   padding-bottom: 85px;
   border-bottom: 1px solid $LineColor;
 }

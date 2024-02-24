@@ -144,7 +144,8 @@
 }
 @media screen and (min-width: 1200px){
     .footer__wrap{
-        align-items: center;
+        align-items: start;
+        padding: 0 0;
     }
     .footer__contact-title{
         margin-bottom: 9px;
