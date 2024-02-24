@@ -500,7 +500,7 @@ body {
   }
 }
 .benefits {
-  padding: 40px 0;
+  padding: 30px 0;
   background-color: #F6F6F8;
 }
 .benefits__wraper {
@@ -538,7 +538,6 @@ body {
           text-decoration-skip-ink: none;
   text-align: center;
   color: #4985FF;
-  padding-bottom: 50px;
   cursor: pointer;
 }
 .benefits__image {
@@ -553,7 +552,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 40px;
   padding: 0 22px;
   padding-bottom: 40px;
   -webkit-box-pack: justify;
@@ -593,9 +591,8 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .benefits {
-    padding-right: 62px;
-    padding-left: 62px;
+  .benefits__wraper {
+    padding-bottom: 40px;
   }
   .benefits__image {
     width: 352px;
@@ -609,6 +606,10 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .benefits {
+    padding-right: 0;
+    padding-left: 0;
+  }
   .benefits__wraper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -619,6 +620,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 70px;
   }
   .benefits__image {
     -webkit-box-ordinal-group: 3;
@@ -632,9 +634,6 @@ body {
     width: 355px;
     margin-right: 128px;
   }
-  .benefits__link {
-    padding-bottom: 96px;
-  }
   .benefits__list {
     margin-top: 50px;
     -webkit-box-orient: horizontal;
@@ -646,8 +645,9 @@ body {
 @media screen and (min-width: 1200px) {
   .benefits {
     padding-top: 100px;
-    padding-left: 0;
-    padding-right: 0;
+  }
+  .benefits__wraper {
+    padding-bottom: 90px;
   }
   .benefits__image {
     width: 500px;
@@ -657,6 +657,9 @@ body {
   }
   .benefits__link {
     padding-bottom: 143px;
+  }
+  .benefits__list {
+    margin-top: 70px;
   }
 }
 .work {
@@ -932,7 +935,7 @@ body {
   border: 1px solid #4985FF;
   cursor: pointer;
   border-radius: 30px;
-  margin-top: 40px;
+  margin-top: 50px;
   -webkit-transition: background-color 250ms ease-in-out;
   transition: background-color 250ms ease-in-out;
 }
@@ -961,8 +964,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .project__item:first-child, .project__item:last-child {
     display: block;
@@ -974,7 +978,7 @@ body {
 @media screen and (min-width: 1200px) {
   .project {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
   }
   .project__title {
     font-size: 36px;
