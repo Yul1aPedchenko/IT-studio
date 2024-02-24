@@ -3,8 +3,8 @@
   &__background {
     background-image: $BackgroundGradient;
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 302px;
+    padding-top: 40px;
+    padding-bottom: 289px;
     margin-bottom: 882px;
   }
   &__wraper {
@@ -14,7 +14,7 @@
   }
   &__wrap {
     position: absolute;
-    top: 178px;
+    top: 111px;
     border-bottom: 1px solid $LineColor;
   }
   &__title {
@@ -43,6 +43,7 @@
     font-size: 16px;
     color: $SecondaryTextColor;
     padding-top: 20px;
+    max-width: 267px;
   }
   &__number {
     font-weight: 600;
@@ -56,7 +57,8 @@
     color: $TextColor;
     padding-top: 20px;
     padding-bottom: 30px;
-    max-width: 301px;
+    max-width: 267px;
+
   }
   &__link {
     font-weight: 500;
@@ -65,7 +67,6 @@
     text-decoration-skip-ink: none;
     color: $AccentColor;
   }
-
   &__btn {
     display: none;
     font-weight: 500;
@@ -109,38 +110,42 @@
   .work {
     &__background {
       margin-bottom: 913px;
+      padding-bottom: 272px;
     }
     &__title {
       font-size: 30px;
     }
     &__wrap {
-      margin: auto;
+      top: 128px;
+      padding-bottom: 0;
     }
     &__img-wrap {
       width: 301px;
     }
     &__list {
-    margin-left: 75px;
-    margin-right: 74px;
-  }
+      margin-left: 75px;
+      margin-right: 74px;
+    }
+    &__item-title,
+    &__text {
+      max-width: 301px;
+    }
   }
 }
 @media screen and (min-width: 768px) {
   .work {
     &__background {
       margin-bottom: 888px;
-    }
-    &__list{
-     padding-bottom: 70px;
-    }
-    &__wrap{
-      top: 258px;
-    }
-    &__title {
-      text-align: left;
+      padding-top: 70px;
+      padding-bottom: 242px;
     }
     &__wrap {
       margin: 0 auto;
+      padding-bottom: 70px;
+      top: 158px;
+    }
+    &__title {
+      text-align: left;
     }
     &__item:first-child,
     &__item:last-child {
@@ -160,7 +165,7 @@
     &__btn {
       display: block;
     }
-    &__btn-wrap-mobile{
+    &__btn-wrap-mobile {
       display: none;
     }
   }
@@ -170,10 +175,11 @@
     &__background {
       margin-bottom: 482px;
       padding-top: 100px;
+      padding-bottom: 302px;
     }
     &__wrap {
       padding-bottom: 85px;
-      top: 258px;
+      top: 218px;
     }
     &__list {
       flex-wrap: nowrap;
