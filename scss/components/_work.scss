@@ -61,11 +61,16 @@
 
   }
   &__link {
+    cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: $AccentColor;
+    transition: color 250ms ease-in-out;
+    &:hover{
+      color: $HoverColor;
+    }
   }
   &__btn {
     display: none;
