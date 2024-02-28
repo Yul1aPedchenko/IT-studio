@@ -37,7 +37,7 @@
   justify-content: center;
   position: absolute;
   top: 220px;
-  padding-left: 40px;
+  padding-left: 55px;
   padding-right: 39px;
   padding-bottom: 85px;
   border-bottom: 1px solid $LineColor;
@@ -64,7 +64,7 @@ video{
 }
 @media screen and (min-width: 768px) {
   .video__mini-film {
-    padding-left: 70px;
+    padding-left: 85px;
     padding-right: 70px;
   }
 }
