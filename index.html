@@ -60,7 +60,20 @@
           <h1 class="header__title">
             Ми створюємо легкі рішення важких задач і проблем
           </h1>
-          <button class="header__btn">Наші проекти</button>
+          <button class="header__btn" data-modal-open>Наші проекти</button>
+        </div>
+      </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <div class="modal__box-close" data-modal-close>
+            <svg class="modal__icon-close" width="10" height="10">
+                <use href="img/symbol-defs.svg#icon-close-modal"></use>
+            </svg>
+          </div>
+          <div class="modal__wrap">
+            <h2 class="modal__title">Просимо вибачення</h2>
+            <p class="modal__text">На даний момент на сайті ведуться технічні роботи, переглянути всі наші проєкти НЕМОЖЛИВО</p>
+          </div>
         </div>
       </div>
     </header>
@@ -1198,5 +1211,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/mobile-menu.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
