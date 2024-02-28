@@ -1156,7 +1156,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 70px;
-  padding-bottom: 420px;
+  padding-bottom: 205px;
+  margin-bottom: 271px;
 }
 
 .video__text {
@@ -1180,9 +1181,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  top: 220px;
-  padding-left: 55px;
-  padding-right: 54px;
+  top: 191px;
+  padding-left: 40px;
+  padding-right: 39px;
   padding-bottom: 85px;
   border-bottom: 1px solid #E0E0E0;
 }
@@ -1206,7 +1207,7 @@ video {
     height: 292px;
   }
   .video__mini-film {
-    top: 70px;
+    top: 191px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1215,10 +1216,13 @@ video {
     background-image: -webkit-image-set(url(../img/video/background-desktop@1x.webp) 1x, url(../img/video/background-desktop@2x.webp) 2x);
     background-image: -webkit-image-set(url(../img/video/background-desktop@1x.jpg) 1x, url(../img/video/background-desktop@2x.jpg) 2x);
     background-image: image-set(url(../img/video/background-desktop@1x.jpg) 1x, url(../img/video/background-desktop@2x.jpg) 2x);
+    padding-bottom: 420px;
+    margin-bottom: 250px;
   }
   .video__mini-film {
     padding-left: 85px;
     padding-right: 85px;
+    top: 220px;
   }
 }
 .form {

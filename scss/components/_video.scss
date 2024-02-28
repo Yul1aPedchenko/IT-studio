@@ -22,7 +22,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 70px;
-  padding-bottom: 420px;
+  padding-bottom: 205px;
+  margin-bottom: 271px;
 }
 .video__text {
   color: $PrimaryTextColor;
@@ -36,9 +37,9 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 220px;
-  padding-left: 55px;
-  padding-right: 54px;
+  top: 191px;
+  padding-left: 40px;
+  padding-right: 39px;
   padding-bottom: 85px;
   border-bottom: 1px solid $LineColor;
 }
@@ -59,7 +60,7 @@ video {
     height: 292px;
   }
   .video__mini-film {
-    top: 70px;
+    top: 191px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -75,9 +76,12 @@ video {
       url(../img/video/background-desktop@1x.jpg) 1x,
       url(../img/video/background-desktop@2x.jpg) 2x
     );
+    padding-bottom: 420px;
+    margin-bottom: 250px;
   }
   .video__mini-film {
     padding-left: 85px;
     padding-right: 85px;
+    top: 220px;
   }
 }

@@ -60,12 +60,12 @@
           <h1 class="header__title">
             Ми створюємо легкі рішення важких задач і проблем
           </h1>
-          <button class="header__btn" data-modal-open>Наші проекти</button>
+          <button class="header__btn" header-modal-open>Наші проекти</button>
         </div>
       </div>
-      <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" header-modal>
         <div class="modal">
-          <div class="modal__box-close" data-modal-close>
+          <div class="modal__box-close" header-modal-close>
             <svg class="modal__icon-close" width="30" height="30">
               <use href="img/symbol-defs.svg#icon-close-modal"></use>
             </svg>
@@ -180,7 +180,23 @@
             </li>
           </ul>
           <div class="about__btn-wrap">
-            <button class="about__btn" data-modal-open>Всі послуги</button>
+            <button class="about__btn" about-modal-open>Всі послуги</button>
+          </div>
+        </div>
+        <div class="backdrop is-hidden" about-modal>
+          <div class="modal">
+            <div class="modal__box-close" about-modal-close>
+              <svg class="modal__icon-close" width="30" height="30">
+                <use href="img/symbol-defs.svg#icon-close-modal"></use>
+              </svg>
+            </div>
+            <div class="modal__wrap">
+              <h2 class="modal__title">Просимо вибачення</h2>
+              <p class="modal__text">
+                На даний момент на сайті ведуться технічні роботи, переглянути
+                всі наші проєкти НЕМОЖЛИВО
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -353,7 +369,7 @@
               <h2 class="work__title">
                 Наші роботи на яких ми спеціалізуємось
               </h2>
-              <button class="work__btn" data-modal-open>Всі послуги</button>
+              <button class="work__btn" work-modal-open>Всі послуги</button>
             </div>
           </div>
         </div>
@@ -691,9 +707,41 @@
               </li>
             </ul>
             <div class="work__btn-wrap-mobile">
-              <button class="work__mobile-btn" data-modal-open>
+              <button class="work__mobile-btn" work-modal-mobile-open>
                 Всі послуги
               </button>
+            </div>
+          </div>
+        </div>
+        <div class="backdrop is-hidden" work-modal>
+          <div class="modal">
+            <div class="modal__box-close" work-modal-close>
+              <svg class="modal__icon-close" width="30" height="30">
+                <use href="img/symbol-defs.svg#icon-close-modal"></use>
+              </svg>
+            </div>
+            <div class="modal__wrap">
+              <h2 class="modal__title">Просимо вибачення</h2>
+              <p class="modal__text">
+                На даний момент на сайті ведуться технічні роботи, переглянути
+                всі наші проєкти НЕМОЖЛИВО
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="backdrop is-hidden" work-modal-mobile>
+          <div class="modal">
+            <div class="modal__box-close" work-modal-mobile-close>
+              <svg class="modal__icon-close" width="30" height="30">
+                <use href="img/symbol-defs.svg#icon-close-modal"></use>
+              </svg>
+            </div>
+            <div class="modal__wrap">
+              <h2 class="modal__title">Просимо вибачення</h2>
+              <p class="modal__text">
+                На даний момент на сайті ведуться технічні роботи, переглянути
+                всі наші проєкти НЕМОЖЛИВО
+              </p>
             </div>
           </div>
         </div>
@@ -1234,6 +1282,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/mobile-menu.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="js/header-modal.js"></script>
+    <script src="js/about-modal.js"></script>
+    <script src="js/work-modal.js"></script>
+    <script src="js/work-modal-mobile.js"></script>
   </body>
 </html>
