@@ -1207,6 +1207,12 @@ video {
     top: 70px;
   }
 }
+@media screen and (min-width: 768px) {
+  .video__mini-film {
+    padding-left: 40px;
+    padding-right: 39px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .video__background {
     background-image: url(../img/video/background-desktop@1x.jpg);
