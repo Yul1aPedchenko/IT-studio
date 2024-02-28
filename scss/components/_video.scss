@@ -1,7 +1,7 @@
-.video{
+.video {
   position: relative;
 }
-.video__title{
+.video__title {
   color: $PrimaryTextColor;
   font-weight: 700;
   font-size: 36px;
@@ -9,22 +9,22 @@
   display: flex;
   justify-content: center;
 }
-.video__background{
-      background-image: -webkit-image-set(
-      url(../img/video/background-tablet@1x.webp) 1x,
-      url(../img/video/background-tablet@2x.webp) 2x
+.video__background {
+  background-image: -webkit-image-set(
+    url(../img/video/background-tablet@1x.webp) 1x,
+    url(../img/video/background-tablet@2x.webp) 2x
   );
 
   background-image: image-set(
-      url(../img/video/background-tablet@1x.jpg) 1x,
-      url(../img/video/background-tablet@2x.jpg) 2x
+    url(../img/video/background-tablet@1x.jpg) 1x,
+    url(../img/video/background-tablet@2x.jpg) 2x
   );
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 70px;
   padding-bottom: 420px;
 }
-.video__text{
+.video__text {
   color: $PrimaryTextColor;
   font-weight: 400;
   font-size: 16px;
@@ -32,54 +32,54 @@
   display: flex;
   justify-content: center;
 }
-.video__mini-film{
+.video__mini-film {
   display: flex;
   justify-content: center;
   position: absolute;
   top: 220px;
   padding-left: 55px;
-  padding-right: 39px;
+  padding-right: 54px;
   padding-bottom: 85px;
   border-bottom: 1px solid $LineColor;
 }
-video{
-  width: 970px; 
+video {
+  width: 970px;
   height: 430px;
   box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25);
   border-radius: 10px;
 }
-@media screen and (max-width: 767px){
-  .video{
-      display: none;
+@media screen and (max-width: 767px) {
+  .video {
+    display: none;
   }
 }
-@media screen and (max-width: 1199px){
-  video{
-      width: 659px;
-      height: 292px;
+@media screen and (max-width: 1199px) {
+  video {
+    width: 659px;
+    height: 292px;
   }
-  .video__mini-film{
-      top: 70px;
+  .video__mini-film {
+    top: 70px;
   }
 }
 @media screen and (min-width: 768px) {
   .video__mini-film {
     padding-left: 85px;
-    padding-right: 70px;
+    padding-right: 85px;
   }
 }
-@media screen and (min-width: 1200px){
-  .video__background{
-      background-image: url(../img/video/background-desktop@1x.jpg);
+@media screen and (min-width: 1200px) {
+  .video__background {
+    background-image: url(../img/video/background-desktop@1x.jpg);
 
-      background-image: -webkit-image-set(
+    background-image: -webkit-image-set(
       url(../img/video/background-desktop@1x.webp) 1x,
       url(../img/video/background-desktop@2x.webp) 2x
-      );
+    );
 
-      background-image: image-set(
-          url(../img/video/background-desktop@1x.jpg) 1x,
-          url(../img/video/background-desktop@2x.jpg) 2x
-      );
+    background-image: image-set(
+      url(../img/video/background-desktop@1x.jpg) 1x,
+      url(../img/video/background-desktop@2x.jpg) 2x
+    );
   }
 }

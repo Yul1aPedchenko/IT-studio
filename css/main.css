@@ -1182,7 +1182,7 @@ body {
   position: absolute;
   top: 220px;
   padding-left: 55px;
-  padding-right: 39px;
+  padding-right: 54px;
   padding-bottom: 85px;
   border-bottom: 1px solid #E0E0E0;
 }
@@ -1212,7 +1212,7 @@ video {
 @media screen and (min-width: 768px) {
   .video__mini-film {
     padding-left: 85px;
-    padding-right: 70px;
+    padding-right: 85px;
   }
 }
 @media screen and (min-width: 1200px) {
