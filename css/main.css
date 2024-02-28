@@ -463,6 +463,7 @@ body {
     max-width: 400px;
     text-align: center;
     margin-top: 20px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1180,7 +1181,8 @@ body {
           justify-content: center;
   position: absolute;
   top: 220px;
-  padding: 0 70px;
+  padding-left: 40px;
+  padding-right: 39px;
   padding-bottom: 85px;
   border-bottom: 1px solid #E0E0E0;
 }
@@ -1209,8 +1211,8 @@ video {
 }
 @media screen and (min-width: 768px) {
   .video__mini-film {
-    padding-left: 40px;
-    padding-right: 39px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 @media screen and (min-width: 1200px) {
