@@ -29,6 +29,10 @@ button {
   cursor: pointer;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 ::after,
 ::before {
