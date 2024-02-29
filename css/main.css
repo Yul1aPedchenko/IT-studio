@@ -495,6 +495,7 @@ body {
   }
   .about__text {
     font-size: 16px;
+    max-width: 730px;
   }
   .about__list {
     margin-top: 70px;
