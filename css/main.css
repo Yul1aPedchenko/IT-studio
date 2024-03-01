@@ -158,6 +158,10 @@ body {
   margin: 0 15px;
 }
 
+.header__burger-icon {
+  fill: #FFFFFF;
+}
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -243,6 +247,13 @@ body {
 
 .mobile__icon {
   margin-right: 15px;
+}
+
+.mobile__info-link:hover {
+  color: #4985FF;
+}
+.mobile__info-link:hover .mobile__icon {
+  fill: #4985FF;
 }
 
 @media screen and (max-width: 767px) {
@@ -1545,19 +1556,21 @@ video {
   border-top: 1px solid #E0E0E0;
 }
 
-.footer__link-hover:hover {
+.footer__svg-all {
+  fill: #999999;
+  -webkit-transition: fill 250ms ease-in-out;
+  transition: fill 250ms ease-in-out;
+}
+
+.footer__link-all {
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
+}
+
+.footer__item-all:hover .footer__link-all {
   color: #000000;
 }
-
-.footer__link-hover:hover .footer__contact-svg {
-  fill: #000000;
-}
-
-.footer__contact-svg {
-  fill: #999999;
-}
-
-.footer__contact-svg:hover {
+.footer__item-all:hover .footer__svg-all {
   fill: #000000;
 }
 
@@ -1606,9 +1619,6 @@ video {
   }
   .footer__contact-title {
     margin-bottom: 9px;
-  }
-  .footer__link-title {
-    margin: 0;
   }
   .footer__project-title {
     margin: 0;

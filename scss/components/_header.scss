@@ -83,6 +83,9 @@
   justify-content: flex-end;
   margin: 0 15px;
 }
+.header__burger-icon {
+  fill: $PrimaryTextColor;
+}
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -149,7 +152,12 @@
 .mobile__icon {
   margin-right: 15px;
 }
-
+.mobile__info-link:hover {
+  color: $AccentColor;
+  .mobile__icon {
+    fill: $AccentColor;
+  }
+}
 @media screen and (max-width: 767px) {
   .header__nav {
     display: none;
