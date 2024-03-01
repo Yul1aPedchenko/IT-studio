@@ -74,6 +74,18 @@
       width: 177px;
     }
 }
+.form-modal__title{
+  color: $SecondaryTextColor;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.form-modal__text{
+  color: $TextColor;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+}
 @media screen and (min-width: 768px) {
   .form {
     margin-top: 140px;

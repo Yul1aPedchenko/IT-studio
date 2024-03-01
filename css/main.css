@@ -1367,6 +1367,20 @@ video {
     width: 177px;
   }
 }
+.form-modal__title {
+  color: #000000;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.form-modal__text {
+  color: #999999;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
 @media screen and (min-width: 768px) {
   .form {
     margin-top: 140px;
