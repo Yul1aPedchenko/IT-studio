@@ -1088,8 +1088,24 @@
               required
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             />
-            <button class="form__button" type="submit">Підписатися</button>
+            <button class="form__button" form-modal-open type="submit">Підписатися</button>
           </form>
+          <div class="backdrop is-hidden" form-modal>
+            <div class="modal">
+              <div class="modal__box-close" form-modal-close>
+                <svg class="modal__icon-close" width="30" height="30">
+                  <use href="img/symbol-defs.svg#icon-close-modal"></use>
+                </svg>
+              </div>
+              <div class="modal__wrap">
+                <h2 class="modal__title">Просимо вибачення</h2>
+                <p class="modal__text">
+                  На даний момент на сайті ведуться технічні роботи, переглянути всі
+                  наші проєкти НЕМОЖЛИВО
+                </p>
+              </div>
+            </div>
+          </div>
           <p class="form__text-join">
             Ми не шлем спам, і не передаємо нікому ваші дані
           </p>
@@ -1216,7 +1232,7 @@
         </div>
       </div>
       <div class="footer__rights">
-        <p class="footer__rights-text">(с) 2019. Всі права захищені</p>
+        <p class="footer__rights-text">(с) 2024. Всі права захищені</p>
       </div>
     </footer>
 
@@ -1286,5 +1302,6 @@
     <script src="js/about-modal.js"></script>
     <script src="js/work-modal.js"></script>
     <script src="js/work-modal-mobile.js"></script>
+    <script src="js/form-modal.js"></script>
   </body>
 </html>
