@@ -117,34 +117,47 @@
     margin-top: 40px;
     border-top: 1px solid $LineColor;
 }
-.footer__contact-item > a,
-.footer__link-item > a,
-.footer__project-item > a,
-.footer__social-item > a{
-    color: $TextColor;
-    transition-duration: 1000ms;
-    transition-property: color;
-}
-.footer__contact-item > a:hover,
-.footer__link-item > a:hover,
-.footer__project-item > a:hover,
-.footer__social-item > a:hover{
+// .footer__contact-item > a,
+// .footer__link-item > a,
+// .footer__project-item > a,
+// .footer__social-item > a{
+//     color: $TextColor;
+//     transition-duration: 1000ms;
+//     transition-property: color;
+// }
+// .footer__contact-item > a:hover,
+// .footer__link-item > a:hover,
+// .footer__project-item > a:hover,
+// .footer__social-item > a:hover{
+//     color: $SecondaryTextColor;
+// }
+// .footer__contact-item > svg,
+// .footer__link-item > svg,
+// .footer__project-item > svg,
+// .footer__social-item > svg{
+//     fill: $TextColor;
+//     transition-duration: 250ms;
+//     transition-property: fill;
+// }
+// .footer__contact-item > svg:hover,
+// .footer__link-item > svg:hover,
+// .footer__project-item > svg:hover,
+// .footer__social-item > svg:hover{
+//     fill: $SecondaryTextColor;
+// }
+.footer__link-hover:hover{
     color: $SecondaryTextColor;
 }
-.footer__contact-item > svg,
-.footer__link-item > svg,
-.footer__project-item > svg,
-.footer__social-item > svg{
-    fill: $TextColor;
-    transition-duration: 250ms;
-    transition-property: fill;
-}
-.footer__contact-item > svg:hover,
-.footer__link-item > svg:hover,
-.footer__project-item > svg:hover,
-.footer__social-item > svg:hover{
+.footer__link-hover:hover .footer__contact-svg{
     fill: $SecondaryTextColor;
 }
+.footer__contact-svg{
+    fill: $TextColor;
+}
+.footer__contact-svg:hover{
+    fill: $SecondaryTextColor;
+}
+
 @media screen and (min-width: 768px){
     .footer{
         padding-top: 70px;

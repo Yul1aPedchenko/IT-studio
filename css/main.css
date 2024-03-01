@@ -1545,39 +1545,19 @@ video {
   border-top: 1px solid #E0E0E0;
 }
 
-.footer__contact-item > a,
-.footer__link-item > a,
-.footer__project-item > a,
-.footer__social-item > a {
-  color: #999999;
-  -webkit-transition-duration: 1000ms;
-          transition-duration: 1000ms;
-  -webkit-transition-property: color;
-  transition-property: color;
-}
-
-.footer__contact-item > a:hover,
-.footer__link-item > a:hover,
-.footer__project-item > a:hover,
-.footer__social-item > a:hover {
+.footer__link-hover:hover {
   color: #000000;
 }
 
-.footer__contact-item > svg,
-.footer__link-item > svg,
-.footer__project-item > svg,
-.footer__social-item > svg {
-  fill: #999999;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: fill;
-  transition-property: fill;
+.footer__link-hover:hover .footer__contact-svg {
+  fill: #000000;
 }
 
-.footer__contact-item > svg:hover,
-.footer__link-item > svg:hover,
-.footer__project-item > svg:hover,
-.footer__social-item > svg:hover {
+.footer__contact-svg {
+  fill: #999999;
+}
+
+.footer__contact-svg:hover {
   fill: #000000;
 }
 
