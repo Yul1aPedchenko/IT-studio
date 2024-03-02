@@ -256,7 +256,7 @@ body {
   fill: #4985FF;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .header__nav {
     display: none;
   }
